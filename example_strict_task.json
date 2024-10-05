@@ -1,5 +1,5 @@
 {
-    "underscoring_audio": {"enable": true, "source": "/path/to/file.mp3"},
+    "underscoring_audio": {"enable": true, "fractional": true, "source": "/path/to/file.mp3"},
     "width": 800,
     "height": 600,
     "clips":
