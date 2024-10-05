@@ -4,23 +4,23 @@
     [
         {
             "visual": {"enable": true, "source": "/some/path/of/image1.png"},
-            "textual": {"enable": true, "text": "Um texto muito longo 1", "time_before": 0.5, "time_after": 0.5, "time_minimum":0.0}
+            "textual": {"enable": true, "source": "Um texto muito longo 1", "time_before": 0.5, "time_after": 0.5, "time_minimum":0.0}
             "transition": {"enable": true, "type": "fading", "time":1.0},
             
         },
         {
             "visual": {"enable": true, "source": ["/some/path/of/image2a.png","/some/path/of/image2b.png"]},
-            "textual": {"enable": true, "text": "Um texto muito longo 2", "time_before": 0.5, "time_after": 0.5, "time_minimum":0.0}
+            "textual": {"enable": true, "source": "Um texto muito longo 2", "time_before": 0.5, "time_after": 0.5, "time_minimum":0.0}
             "transition": {"enable": true, "type": "fading", "time":1.0}
         },
         {
             "visual": {"enable": true, "source": "/some/path/of/video3.mp4"},
-            "textual": {"enable": true, "text": "Um texto muito longo 3", "time_before": 0.5, "time_after": 0.5, "time_minimum":0.0}
+            "textual": {"enable": true, "source": "Um texto muito longo 3", "time_before": 0.5, "time_after": 0.5, "time_minimum":0.0}
             "transition": {"enable": true, "type": "fading", "time":1.0}
         },
         {
             "visual": {"enable": true, "source": ["/some/path/of/video4a.mp4","/some/path/of/video4b.mp4"]},
-            "textual": {"enable": true, "text": "Um texto muito longo 4", "time_before": 0.5, "time_after": 0.5, "time_minimum":0.0}
+            "textual": {"enable": true, "source": "Um texto muito longo 4", "time_before": 0.5, "time_after": 0.5, "time_minimum":0.0}
             "transition": {"enable": true, "type": "fading", "time":1.0}
         }
     ]
