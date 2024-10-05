@@ -1,5 +1,6 @@
 {
     "underscoring_music":"/path/to/file.mp3",
+    "time_minimum":0.0,
     "clips":
     [
         {
