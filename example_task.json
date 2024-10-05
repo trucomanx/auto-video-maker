@@ -1,39 +1,27 @@
 {
     "underscoring_music":"/path/to/file.mp3",
-    "time_minimum":0.0,
     "clips":
     [
         {
             "visual_source": "/some/path/of/image1.png",
-            "text_source": "Um texto muito longo 1",
-            "time_before": 0.5,
-            "time_after": 0.5,
-            "transition": "fading",
-            "time_transition": 1.0
+            "textual_source": {"text": "Um texto muito longo 1", "time_before": 0.5, "time_after": 0.5, "time_minimum":0.0}
+            "transition": {"type": "fading", "time":1.0},
+            
         },
         {
             "visual_source": ["/some/path/of/image2a.png","/some/path/of/image2b.png"],
-            "text_source": "Um texto muito longo 2",
-            "time_before": 0.5,
-            "time_after": 0.5,
-            "transition": "fading",
-            "time_transition": 1.0
+            "textual_source": {"text": "Um texto muito longo 2", "time_before": 0.5, "time_after": 0.5, "time_minimum":0.0}
+            "transition": {"type": "fading", "time":1.0}
         },
         {
             "visual_source": "/some/path/of/video3.mp4",
-            "text_source": "Um texto muito longo 3",
-            "time_before": 0.5,
-            "time_after": 0.5,
-            "transition": "fading",
-            "time_transition": 1.0
+            "textual_source": {"text": "Um texto muito longo 3", "time_before": 0.5, "time_after": 0.5, "time_minimum":0.0}
+            "transition": {"type": "fading", "time":1.0}
         },
         {
             "visual_source": ["/some/path/of/video4a.mp4","/some/path/of/video4b.mp4"],
-            "text_source": "Um texto muito longo 4",
-            "time_before": 0.5,
-            "time_after": 0.5,
-            "transition": "fading",
-            "time_transition": 1.0
+            "textual_source": {"text": "Um texto muito longo 4", "time_before": 0.5, "time_after": 0.5, "time_minimum":0.0}
+            "transition": {"type": "fading", "time":1.0}
         }
     ]
 }
