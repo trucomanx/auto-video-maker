@@ -1,5 +1,5 @@
 {
-    "audio_source":"/path/to/file.mp3",
+    "underscoring_music":"/path/to/file.mp3",
     "clips":
     [
         {
