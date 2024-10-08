@@ -3,8 +3,9 @@
 import fitz  # PyMuPDF
 from PIL import Image
 import os
+from tqdm import tqdm
 
-def pdf_to_image(pdf_path, output_dir, image_name_format, dpi=300):
+def to_images(pdf_path, output_dir, image_name_format, dpi=300):
     """
     Converts each page of a PDF file into an image and saves them in a specified output directory.
 
@@ -30,7 +31,7 @@ def pdf_to_image(pdf_path, output_dir, image_name_format, dpi=300):
 
     Example Usage:
     --------------
-    pdf_to_image('example.pdf', 'output_images', 'page_%d.png')
+    to_images('example.pdf', 'output_images', 'page_%d.png')
 
     Notes:
     ------
@@ -49,7 +50,7 @@ def pdf_to_image(pdf_path, output_dir, image_name_format, dpi=300):
     image_paths = []
 
     # Iterar sobre todas as páginas do PDF
-    for page_num in range(pdf_document.page_count):
+    for page_num in tqdm(range(pdf_document.page_count)):
         # Carregar a página
         page = pdf_document.load_page(page_num)
 
@@ -75,6 +76,6 @@ def pdf_to_image(pdf_path, output_dir, image_name_format, dpi=300):
 
 if __name__ == '__main__':
     # Exemplo de uso
-    list_path_of_images = pdf_to_image("main.pdf", "output/images", "image%d.png")
+    list_path_of_images = to_images("main.pdf", "output/images", "image%d.png")
     print(list_path_of_images)
 

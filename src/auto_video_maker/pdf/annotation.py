@@ -5,7 +5,7 @@
 import fitz  # PyMuPDF
 
 # Função para extrair todas as anotações (comentários) de todas as páginas de um PDF
-def pdf_annotations(pdf_path):
+def annotations(pdf_path):
     """
     Extracts annotations from a PDF file and returns a list of dictionaries containing
     information about the annotations on each page.
@@ -79,7 +79,7 @@ def pdf_annotations(pdf_path):
 if __name__ == '__main__':
     # Exemplo de uso
     pdf_file = "main.pdf"
-    all_comments = pdf_annotations(pdf_file)
+    all_comments = annotations(pdf_file)
 
     # Exibindo os resultados
     for page_num, comments in enumerate(all_comments):
