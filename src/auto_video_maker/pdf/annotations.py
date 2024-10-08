@@ -6,6 +6,43 @@ import fitz  # PyMuPDF
 
 # Função para extrair todas as anotações (comentários) de todas as páginas de um PDF
 def pdf_annotations(pdf_path):
+    """
+    Extracts annotations from a PDF file and returns a list of dictionaries containing
+    information about the annotations on each page.
+
+    Parameters:
+    -----------
+    pdf_path : str
+        Path to the PDF file to be processed.
+
+    Returns:
+    --------
+    all_annotations : list of lists of dict
+        A list where each item corresponds to a page in the PDF, containing a list of dictionaries 
+        with details about the annotations on that page. Each annotation dictionary includes:
+            - 'type': The type of annotation (e.g., text, highlight).
+            - 'content': The content of the annotation (if available).
+            - 'rect': The coordinates of the annotation's position on the page (rectangle).
+
+    Example Return:
+    -------------------
+    [
+        [   # Page 1
+            {'type': 'Text', 'content': 'Comment', 'rect': (x0, y0, x1, y1)},
+            {'type': 'Highlight', 'content': 'Highlighted text', 'rect': (x0, y0, x1, y1)}
+        ],
+        [   # Page 2
+            {'type': 'Text', 'content': 'Another comment', 'rect': (x0, y0, x1, y1)}
+        ],
+        ...
+    ]
+
+    Notes:
+    ------
+    - Uses the PyMuPDF library (imported as `fitz`) to open the PDF file and access annotations.
+    - Automatically closes the PDF document after processing.
+
+    """
     # Abre o arquivo PDF
     pdf_document = fitz.open(pdf_path)
 
