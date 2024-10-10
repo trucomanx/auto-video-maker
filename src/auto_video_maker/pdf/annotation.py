@@ -25,7 +25,7 @@ def annotations(pdf_path):
             - 'rect': The coordinates of the annotation's position on the page (rectangle).
 
     Example Return:
-    -------------------
+    ---------------
     [
         [   # Page 1
             {'type': 'Text', 'content': 'Comment', 'rect': (x0, y0, x1, y1)},
@@ -36,6 +36,7 @@ def annotations(pdf_path):
         ],
         ...
     ]
+
 
     Notes:
     ------
