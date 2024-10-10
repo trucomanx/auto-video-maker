@@ -1,0 +1,4 @@
+{
+    "transition": {"enable": true, "type": "fading", "time":1.0},
+    "time_minimum": 0.0
+}

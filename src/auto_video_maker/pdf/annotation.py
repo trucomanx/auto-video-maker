@@ -74,20 +74,6 @@ def annotations(pdf_path):
 
     return all_annotations
 
-################################################################################
 
-if __name__ == '__main__':
-    # Exemplo de uso
-    pdf_file = "main.pdf"
-    all_comments = annotations(pdf_file)
-
-    # Exibindo os resultados
-    for page_num, comments in enumerate(all_comments):
-        print(f"Anotações na página {page_num + 1}:")
-        if comments:
-            for comment in comments:
-                print(f"  Tipo: {comment['type']}, Conteúdo: {comment['content']}, Localização: {comment['rect']}")
-        else:
-            print("  Sem anotações.")
 
 

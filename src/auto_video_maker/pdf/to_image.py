@@ -72,10 +72,4 @@ def to_images(pdf_path, output_dir, image_name_format, dpi=300):
 
     return image_paths
 
-################################################################################
-
-if __name__ == '__main__':
-    # Exemplo de uso
-    list_path_of_images = to_images("main.pdf", "output/images", "image%d.png")
-    print(list_path_of_images)
 

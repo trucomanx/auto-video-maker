@@ -1,2 +1,8 @@
 /src/auto_video_maker/__pycache__
 /src/auto_video_maker/pdf/__pycache__
+/src/auto_video_maker/json/__pycache__/
+/src/auto_video_maker/text/__pycache__/
+/src/auto_video_maker/video/__pycache__/
+/tests/output/
+/tests/temp_videos/
+/tests/video_final.mp4
