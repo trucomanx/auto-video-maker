@@ -29,10 +29,10 @@ def annotations(pdf_path):
     [
         [   # Page 1
             {'type': 'Text', 'content': 'Comment', 'rect': (x0, y0, x1, y1)},
-            {'type': 'Highlight', 'content': 'Highlighted text', 'rect': (x0, y0, x1, y1)}
+            {'type': 'Highlight', 'content': 'Highlighted text', 'rect': [x0, y0, x1, y1]}
         ],
         [   # Page 2
-            {'type': 'Text', 'content': 'Another comment', 'rect': (x0, y0, x1, y1)}
+            {'type': 'Text', 'content': 'Another comment', 'rect': [x0, y0, x1, y1]}
         ],
         ...
     ]
@@ -62,7 +62,7 @@ def annotations(pdf_path):
             annot_info = {
                 'type': annot.type[1],  # Tipo de anotação (e.g., texto, highlight)
                 'content': annot.info.get("content", ""),  # Conteúdo da anotação
-                'rect': annot.rect  # Posição da anotação na página
+                'rect': list(annot.rect)  # Posição da anotação na página
             }
             page_annotations.append(annot_info)
 

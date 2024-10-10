@@ -10,7 +10,7 @@ CONFIG_DEFAULT = {
     "time_minimum": 1.0
 }
 
-def to_json(pdf_path, output_dir, image_name_format, dpi=300, shape=(800,600)):
+def to_project(pdf_path, output_dir, image_name_format, dpi=300, shape=(800,600)):
     '''
     '''
     image_dir = os.path.join(output_dir,'images');
