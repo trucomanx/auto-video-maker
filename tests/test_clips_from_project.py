@@ -13,7 +13,7 @@ import auto_video_maker as avm
 pdf_file = "/home/fernando/Proyectos/AULAS Y EXPOS/CURSOS/NeuralNetwork/conv2d/main.pdf"
 
 
-avm.pdf.to_project(pdf_file, "output", "image%d.png", dpi=300, shape=(800,600))
+avm.pdf.to_project(pdf_file, "output", "image%d.png", dpi=300)
 
 
 temp_videos = avm.video.clips_from_project( "output/data.json",

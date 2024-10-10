@@ -7,3 +7,4 @@
 /tests/temp_videos/
 /tests/video_final.mp4
 /src/auto_video_maker/audio/__pycache__
+/src/auto_video_maker/image/__pycache__

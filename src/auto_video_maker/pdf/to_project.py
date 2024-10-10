@@ -4,19 +4,23 @@ import os
 import json
 from .to_image   import to_images
 from .annotation import annotations
+import auto_video_maker as avm
 
 CONFIG_DEFAULT = {
     "transition": {"enable": True, "type": "fading", "time":1.0},
     "time_minimum": 1.0
 }
 
-def to_project(pdf_path, output_dir, image_name_format, dpi=300, shape=(800,600)):
+
+
+def to_project(pdf_path, output_dir, image_name_format, dpi=300):
     '''
     '''
     image_dir = os.path.join(output_dir,'images');
     
     image_paths     = to_images(pdf_path, image_dir, image_name_format, dpi);
     all_annotations = annotations(pdf_path)
+    shape = avm.image.frequent_shape(image_paths)
     
     data={"width": shape[0], "height": shape[1], "clips":[]  }
     
